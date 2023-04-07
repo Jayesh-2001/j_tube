@@ -1,8 +1,7 @@
 import { useState, useEffect } from "react";
 import { Typography, Box } from "@mui/material";
 import { useParams } from "react-router-dom";
-
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { fetchFromAPI } from "../utilities/fetchFromAPI";
 import { Videos } from "./";
 
 const SearchFeed = () => {
@@ -17,7 +16,7 @@ const SearchFeed = () => {
   return (
     <Box p={2} minHeight="95vh">
       <Typography variant="h4" fontWeight={900} color="white" mb={3} ml={{ sm: "100px" }}>
-        Search Results for <span style={{ color: "#FC1503" }}>{searchTerm}</span> videos
+        Search Results for <span style={{ color: "#14d510" }}>{searchTerm}</span><span style={{ paddingLeft: '5px' }}>:</span>
       </Typography>
       <Box display="flex">
         <Box sx={{ mr: { sm: '100px' } }} />

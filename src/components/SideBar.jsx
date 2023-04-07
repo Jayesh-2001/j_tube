@@ -1,6 +1,6 @@
 import React from 'react'
 import { Stack } from '@mui/material'
-import { categories } from '../utils/constants'
+import { categories } from '../utilities/constants'
 
 
 const SideBar = ({ SelectedCategory, setSelectedCategory }) => {
@@ -16,7 +16,7 @@ const SideBar = ({ SelectedCategory, setSelectedCategory }) => {
                style={{ background: category.name === SelectedCategory && '#FC1530', color: 'white' }}
                key={category.name}
             >
-               <span style={{ color: category.name === SelectedCategory ? 'white' : 'red', marginRight: '15px' }}>{category.icon}</span>
+               <span style={{ color: category.name === SelectedCategory ? 'white' : '#14d510', marginRight: '15px' }}>{category.icon}</span>
                <span style={{ opacity: category.name === SelectedCategory ? '1' : '0.8', }}>{category.name}</span>
             </button>
          ))
@@ -25,4 +25,4 @@ const SideBar = ({ SelectedCategory, setSelectedCategory }) => {
    )
 }
 
-export default SideBar
+export default SideBar;

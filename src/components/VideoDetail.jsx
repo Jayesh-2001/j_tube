@@ -5,7 +5,7 @@ import { Typography, Box, Stack } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 import { Videos, Loader } from "./";
-import { fetchFromAPI } from "../utils/fetchFromAPI";
+import { fetchFromAPI } from "../utilities/fetchFromAPI";
 
 const VideoDetail = () => {
    const [videoDetail, setVideoDetail] = useState(null);
@@ -51,7 +51,7 @@ const VideoDetail = () => {
                   </Stack>
                </Box>
             </Box>
-            <Box px={2} py={{ md: 1, xs: 5 }} justifyContent="center" alignItems="center" >
+            <Box px={2} py={{ md: 1, xs: 5 }} justifyContent="center" alignItems="center">
                <Videos videos={videos} direction="column" />
             </Box>
          </Stack>
